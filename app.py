@@ -15,6 +15,7 @@ def predict_emo():
         x = request.json['textdata']
         prd = model.predict(x)
         return jsonify(result = str(prd))
+    return "Predict"
 
 if __name__ == "__main__":
     model = Model()
