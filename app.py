@@ -2,8 +2,13 @@ from flask import Flask
 from flask.json import jsonify
 from model import Model
 from flask import request
+import sys
+import logging
 
 app = Flask(__name__)
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 @app.route("/")
 def index():
