@@ -1,11 +1,14 @@
 from flask import Flask
 from flask.json import jsonify
+from flask_cors.extension import CORS
 from model import Model
 from flask import request
 import sys
 import logging
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
