@@ -17,6 +17,7 @@ def index():
 @app.route("/predict", methods = ['GET', 'POST'])
 def predict_emo():
     if request.method == 'POST':
+        model = Model()
         x = request.json['textdata']
         prd = model.predict(x)
         return jsonify(result = str(prd))
