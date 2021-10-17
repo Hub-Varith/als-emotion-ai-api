@@ -1,5 +1,0 @@
-wordnet
-pros_cons
-reuters
-city_database
-stopwords

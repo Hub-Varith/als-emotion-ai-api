@@ -1,2 +1,0 @@
--e git+https://github.com/certifi/python-certifi#egg=certifi
--e .
