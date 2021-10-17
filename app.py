@@ -1,6 +1,5 @@
 from flask import Flask
 from flask.json import jsonify
-from flask_cors.extension import CORS
 from model import Model
 from flask import request
 import sys
