@@ -2,7 +2,6 @@ from flask import Flask
 from flask.json import jsonify
 from model import Model
 from flask import request
-from waitress import serve
 
 app = Flask(__name__)
 
@@ -19,7 +18,7 @@ def predict_emo():
 
 if __name__ == "__main__":
     model = Model()
-    serve(app, host='0.0.0.0', port=8080, url_scheme='https')
+    app.run(app, host='0.0.0.0', port=8080)
 
 
 
