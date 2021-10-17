@@ -14,7 +14,7 @@ app.logger.setLevel(logging.ERROR)
 def index():
     return "<p>Main page</p>"
 
-@app.route("/predict", methods = ['POST'])
+@app.route("/predict", methods = ['GET', 'POST'])
 def predict_emo():
     if request.method == 'POST':
         x = request.json['textdata']
