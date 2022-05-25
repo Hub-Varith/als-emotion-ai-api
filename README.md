@@ -1,6 +1,6 @@
 # asl-emotion-ai-api
 
-This api is designed for binary emotion classification using logistic regression.
+This api is designed for binary emotion classification using WordNetLemmatizer.
 <h1>How to use the API:</h1>
 
 ### POST https://asl-emotion-ai-api.herokuapp.com/predict
